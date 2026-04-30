@@ -98,3 +98,87 @@ p  { font-size: 20px; line-height: 1.7; max-width: 900px; }
   <!-- Slide 1 -->
   <section class="slide dark">
     <h1>Agente Orquestador Estratégico</h1>
+    <p>
+      Sistema de soporte comercial que actúa como un
+      <strong>Strategy Lead Senior del sector financiero argentino</strong>.
+    </p>
+    <span class="tag">Presentación ejecutiva</span>
+  </section>
+
+  <!-- Slide 2 -->
+  <section class="slide">
+    <h2>El problema real</h2>
+    <p>
+      El comercial decide con información dispersa, poco tiempo y alta
+      incertidumbre macroeconómica.
+    </p>
+    <p>
+      Este agente centraliza análisis, aporta criterio senior y baja
+      complejidad a decisiones claras.
+    </p>
+  </section>
+
+  <!-- Slide 3 -->
+  <section class="slide">
+    <h2>Cómo piensa el agente</h2>
+    <p>
+      No responde como un chatbot. Piensa como un líder estratégico:
+      contexto → hipótesis → impacto.
+    </p>
+  </section>
+
+  <!-- Slide 4 -->
+  <section class="slide">
+    <h2>Flujo de agentes (navegable)</h2>
+
+    <div class="diagram">
+      <div class="node" onclick="show('orq')">Agente Orquestador</div>
+      <div class="node" onclick="show('consumo')">Consumo & Medios</div>
+      <div class="node" onclick="show('competencia')">Competencia</div>
+      <div class="node" onclick="show('macro')">Macroeconomía</div>
+      <div class="node" onclick="show('bc')">Business Case</div>
+      <div class="node" onclick="show('doc')">Documento Ejecutivo</div>
+    </div>
+
+    <div id="orq" class="panel">
+      Define foco, prioriza hipótesis y coordina a todos los agentes.
+    </div>
+    <div id="consumo" class="panel">
+      Analiza patrones de consumo y medios de pago del mercado argentino.
+    </div>
+    <div id="competencia" class="panel">
+      Benchmarks de bancos, fintechs y adquirentes.
+    </div>
+    <div id="macro" class="panel">
+      Traduce inflación, tasas y regulación en impacto comercial.
+    </div>
+    <div id="bc" class="panel">
+      Modela ingresos, costos y escenarios.
+    </div>
+    <div id="doc" class="panel">
+      Documento listo para cliente o comité.
+    </div>
+  </section>
+
+  <!-- Slide 5 -->
+  <section class="slide">
+    <h2>Qué gana el comercial</h2>
+    <p>
+      Menos intuición. Más contexto. Mejor discurso.
+      Decisiones defendibles y accionables.
+    </p>
+  </section>
+
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.panel')
+    .forEach(p => p.classList.remove('active'));
+  document.getElementById(id)
+    .classList.add('active');
+}
+</script>
+
+</body>
+</html>
